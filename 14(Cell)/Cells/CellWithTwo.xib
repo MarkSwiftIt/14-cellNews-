@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="164" id="4sc-t0-xA8" customClass="CellWithTwo" customModule="_4_Cell_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="487" height="164"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4sc-t0-xA8" id="RZ2-xt-URb">
+                <rect key="frame" x="0.0" y="0.0" width="487" height="164"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mbG-6w-mUc">
+                        <rect key="frame" x="10" y="0.0" width="477" height="164"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgV-lJ-gMT">
+                                <rect key="frame" x="0.0" y="72" width="228.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cd8-3h-h5t">
+                                <rect key="frame" x="248.5" y="72" width="228.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mbG-6w-mUc" firstAttribute="leading" secondItem="RZ2-xt-URb" secondAttribute="leading" constant="10" id="9Zx-rw-iQW"/>
+                    <constraint firstAttribute="trailing" secondItem="mbG-6w-mUc" secondAttribute="trailing" id="oAC-R0-Jr2"/>
+                    <constraint firstItem="mbG-6w-mUc" firstAttribute="top" secondItem="RZ2-xt-URb" secondAttribute="top" id="tkY-e4-fSC"/>
+                    <constraint firstAttribute="bottom" secondItem="mbG-6w-mUc" secondAttribute="bottom" id="tpN-MG-ydG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="LabelOne" destination="QgV-lJ-gMT" id="jAs-Po-kmn"/>
+                <outlet property="LabelTwo" destination="cd8-3h-h5t" id="2j7-2a-prv"/>
+            </connections>
+            <point key="canvasLocation" x="945.6521739130435" y="71.651785714285708"/>
+        </tableViewCell>
+    </objects>
+</document>
